@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="./dist/styles.css" />
     <script defer src="./app/js/script.js"></script>
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
@@ -28,26 +28,30 @@
     <main>
       <header>
         <nav>
-          <img src="./images/logo.svg" alt="Easybank-logo" />
-          <ul class="desktop-links hide-in-mobile">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-          <ul class="mobile-links hide-in-desktop">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-          <img
-            src="./images/icon-hamburger.svg"
-            alt="mobile-links-menu hide-in-desktop"
-          />
-          <button>Request Invite</button>
+          <div class="container">
+            <img src="./images/logo.svg" alt="Easybank-logo" />
+            <ul class="desktop-links hide-in-mobile">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+            <div class="outlay hide-slow"></div>
+            <ul class="mobile-links hide-in-desktop hide-slow">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+            <img
+              class="ham-icon"
+              src="./images/icon-hamburger.svg"
+              alt="mobile-links-menu hide-in-desktop"
+            />
+            <button class="hide-in-mobile">Request Invite</button>
+          </div>
         </nav>
       </header>
     </main>
@@ -76,12 +80,11 @@
     to request an invite through the site ... About Us Contact Blog Careers
     Support Privacy Policy Request Invite © Easybank. All Rights Reserved
 -->
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-    <script src="app/js/script.js"></script>
+    </div> -->
   </body>
 </html>
