@@ -1,18 +1,20 @@
 nav {
   padding: 24px 0;
-  background-color: $white;
+  // background-color: $white;
+  background-color: $very-light-gray;
   position: relative;
+  @include breakpoint-up(large) {
+  }
   & .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     & .outlay {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-image: linear-gradient(to bottom, $dark-blue, transparent);
+      @include breakpoint-down(small) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, $dark-blue, transparent);
+      }
     }
     & ul.mobile-links {
       position: absolute;
@@ -35,6 +37,45 @@ nav {
         transition: 0.3s;
         &:hover {
           opacity: 0.7;
+        }
+      }
+    }
+    & ul.desktop-links {
+      @include breakpoint-up(small) {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      @include breakpoint-up(large) {
+        gap: 30px;
+      }
+      & li {
+        color: $grayish-blue;
+        position: relative;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: $dark-blue;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: calc(100% + 28px);
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background-image: linear-gradient(
+            to right,
+            $lime-green,
+            $bright-cyan
+          );
+          opacity: 0;
+          transition: 0.3s;
+        }
+        &:hover::after {
+          opacity: 1;
         }
       }
     }

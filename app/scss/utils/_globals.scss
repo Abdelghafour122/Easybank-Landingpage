@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: Public Sans;
-  // background-color: black;
+  background-color: $light-grayish-blue;
 }
 
 ul {
@@ -100,4 +100,20 @@ ul {
 
 .hide {
   display: none;
+}
+
+button {
+  padding: 10px 25px;
+  background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+  border-radius: 100px;
+  border: none;
+  color: $white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.6;
+  }
 }
