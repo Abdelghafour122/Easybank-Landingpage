@@ -1,0 +1,42 @@
+.hero {
+  & .container {
+    flex-direction: column;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+    }
+    .text {
+      text-align: center;
+      @include breakpoint-up(small) {
+        flex-basis: 40%;
+        order: unset;
+      }
+      & h1 {
+      }
+      & p {
+      }
+    }
+    .image {
+      position: relative;
+      order: -1;
+      // use ps, get the standard height
+      width: 100%;
+      @include breakpoint-up(small) {
+        flex-basis: 60%;
+        order: unset;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        // height: 100%;
+        height: 100px;
+        width: 100%;
+        background-image: url("../images/image-mockups.png");
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("./images/");
+      }
+    }
+  }
+}

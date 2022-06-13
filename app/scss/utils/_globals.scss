@@ -121,6 +121,9 @@ button {
   @include breakpoint-up(large) {
     padding: 10px 25px;
   }
+  @include breakpoint-down(small) {
+    padding: 10px 25px;
+  }
   &:hover {
     opacity: 0.6;
   }

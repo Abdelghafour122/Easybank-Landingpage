@@ -172,6 +172,12 @@ button {
   }
 }
 
+@media (max-width: 35.9375rem) {
+  button {
+    padding: 10px 25px;
+  }
+}
+
 button:hover {
   opacity: 0.6;
 }
@@ -369,5 +375,67 @@ nav .container ul.desktop-links li:hover::after {
 
 nav .container .ham-icon {
   cursor: pointer;
+}
+
+.hero .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 36rem) {
+  .hero .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.hero .container .text {
+  text-align: center;
+}
+
+@media (min-width: 36rem) {
+  .hero .container .text {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+.hero .container .image {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
+}
+
+@media (min-width: 36rem) {
+  .hero .container .image {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+.hero .container .image::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background-image: url("../images/image-mockups.png");
+}
+
+.hero .container .image::after {
+  content: "";
+  position: absolute;
+  background-image: url("./images/");
 }
 /*# sourceMappingURL=styles.css.map */
