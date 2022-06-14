@@ -6,13 +6,35 @@
     }
     .text {
       text-align: center;
+      margin: 40px 0 60px;
       @include breakpoint-up(small) {
         flex-basis: 40%;
         order: unset;
+        text-align: left;
+      }
+      @include breakpoint-up(medium) {
+        margin: 55px 0 75px;
+      }
+      @include breakpoint-up(large) {
+        margin: 155px 0 175px;
       }
       & h1 {
+        font-size: 40px;
+        color: $dark-blue;
+        font-weight: 300;
+        margin: 0;
+        @include breakpoint-up(large) {
+          font-size: 50px;
+        }
       }
       & p {
+        color: $grayish-blue;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 20px 0 30px;
+        @include breakpoint-up(large) {
+          font-size: 16px;
+        }
       }
     }
     .image {
@@ -25,7 +47,7 @@
         order: unset;
       }
       &::before {
-        content: "";
+        // content: "";
         position: absolute;
         // height: 100%;
         height: 100px;
@@ -35,7 +57,7 @@
       &::after {
         content: "";
         position: absolute;
-        background-image: url("./images/");
+        background-image: url("./images/bg-intro-mobile.svg");
       }
     }
   }

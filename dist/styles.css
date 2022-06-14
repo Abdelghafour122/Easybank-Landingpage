@@ -395,6 +395,7 @@ nav .container .ham-icon {
 
 .hero .container .text {
   text-align: center;
+  margin: 40px 0 60px;
 }
 
 @media (min-width: 36rem) {
@@ -404,6 +405,45 @@ nav .container .ham-icon {
     -webkit-box-ordinal-group: unset;
         -ms-flex-order: unset;
             order: unset;
+    text-align: left;
+  }
+}
+
+@media (min-width: 48rem) {
+  .hero .container .text {
+    margin: 55px 0 75px;
+  }
+}
+
+@media (min-width: 62rem) {
+  .hero .container .text {
+    margin: 155px 0 175px;
+  }
+}
+
+.hero .container .text h1 {
+  font-size: 40px;
+  color: #2d314d;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (min-width: 62rem) {
+  .hero .container .text h1 {
+    font-size: 50px;
+  }
+}
+
+.hero .container .text p {
+  color: #9698a6;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 20px 0 30px;
+}
+
+@media (min-width: 62rem) {
+  .hero .container .text p {
+    font-size: 16px;
   }
 }
 
@@ -426,7 +466,6 @@ nav .container .ham-icon {
 }
 
 .hero .container .image::before {
-  content: "";
   position: absolute;
   height: 100px;
   width: 100%;
@@ -436,6 +475,6 @@ nav .container .ham-icon {
 .hero .container .image::after {
   content: "";
   position: absolute;
-  background-image: url("./images/");
+  background-image: url("./images/bg-intro-mobile.svg");
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,4 +15,6 @@ menuIcon.addEventListener("click", () => {
 
   outlay.classList.toggle("show-slow");
   outlay.classList.toggle("hide-slow");
+
+  document.body.classList.toggle("no-scroll");
 });
