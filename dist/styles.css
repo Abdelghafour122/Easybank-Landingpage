@@ -452,6 +452,7 @@ nav .container .ham-icon {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  height: 323px;
   width: 100%;
 }
 
@@ -466,15 +467,48 @@ nav .container .ham-icon {
 }
 
 .hero .container .image::before {
+  content: "";
   position: absolute;
-  height: 100px;
+  height: 100%;
   width: 100%;
   background-image: url("../images/image-mockups.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 62rem) {
+  .hero .container .image::before {
+    height: 312%;
+    width: 110%;
+    background-position: 323% -51%;
+    background-size: 93%;
+    top: -45%;
+    left: 2%;
+  }
 }
 
 .hero .container .image::after {
   content: "";
   position: absolute;
-  background-image: url("./images/bg-intro-mobile.svg");
+  background-image: url("../images/bg-intro-mobile.svg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: -2;
+  background-position: center;
+}
+
+@media (min-width: 62rem) {
+  .hero .container .image::after {
+    background-image: url("../images/bg-intro-desktop.svg");
+    height: 283%;
+    width: 113%;
+    background-position: -6% 35%;
+    top: -120%;
+    left: 0;
+    background-size: 143% 102%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
