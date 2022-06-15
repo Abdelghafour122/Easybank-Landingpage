@@ -40,7 +40,6 @@
     .image {
       position: relative;
       order: -1;
-      // use ps, get the standard height
       height: 323px;
       width: 100%;
       @include breakpoint-up(small) {
@@ -48,16 +47,6 @@
         order: unset;
       }
       &::before {
-        // content: "";
-        // position: absolute;
-        // height: 100%;
-        // width: 100%;
-        // background-image: url("../images/image-mockups.png");
-        // background-repeat: no-repeat;
-        // z-index: -1;
-        // top: 0;
-        // left: 0;
-
         content: "";
         position: absolute;
         height: 110%;
@@ -69,15 +58,16 @@
         left: 0;
         background-size: 104%;
         background-position: 40% 117%;
+        @include breakpoint-up(small) {
+          height: 160%;
+          width: 115%;
+          background-position: -983% 0%;
+          background-size: 102%;
+          top: -40%;
+          left: 3%;
+        }
 
         @include breakpoint-up(large) {
-          //   height: 110%;
-          //   width: 110%;
-          //   background-position: -6% 35%;
-          //   background-size: 100%;
-          //   top: -120%;
-          //   left: 0;
-
           height: 312%;
           width: 110%;
           background-position: 323% -51%;
@@ -87,15 +77,6 @@
         }
       }
       &::after {
-        // content: "";
-        // position: absolute;
-        // background-image: url("../images/bg-intro-mobile.svg");
-        // height: 100%;
-        // width: 100%;
-        // background-repeat: no-repeat;
-        // z-index: -2;
-        // background-position: center;
-
         content: "";
         position: absolute;
         background-image: url("../images/bg-intro-mobile.svg");
@@ -107,7 +88,15 @@
         left: -7%;
         top: 0%;
         background-size: 100%;
-
+        @include breakpoint-up(small) {
+          background-image: url("../images/bg-intro-desktop.svg");
+          height: 130%;
+          width: 120%;
+          background-position: 0% 0%;
+          top: -47%;
+          left: 0;
+          background-size: 140%;
+        }
         @include breakpoint-up(large) {
           background-image: url("../images/bg-intro-desktop.svg");
           height: 283%;

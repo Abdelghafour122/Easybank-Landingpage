@@ -481,6 +481,17 @@ nav .container .ham-icon {
   background-position: 40% 117%;
 }
 
+@media (min-width: 36rem) {
+  .hero .container .image::before {
+    height: 160%;
+    width: 115%;
+    background-position: -983% 0%;
+    background-size: 102%;
+    top: -40%;
+    left: 3%;
+  }
+}
+
 @media (min-width: 62rem) {
   .hero .container .image::before {
     height: 312%;
@@ -504,6 +515,18 @@ nav .container .ham-icon {
   left: -7%;
   top: 0%;
   background-size: 100%;
+}
+
+@media (min-width: 36rem) {
+  .hero .container .image::after {
+    background-image: url("../images/bg-intro-desktop.svg");
+    height: 130%;
+    width: 120%;
+    background-position: 0% 0%;
+    top: -47%;
+    left: 0;
+    background-size: 140%;
+  }
 }
 
 @media (min-width: 62rem) {
