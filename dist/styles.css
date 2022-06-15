@@ -492,6 +492,17 @@ nav .container .ham-icon {
   }
 }
 
+@media (min-width: 48rem) {
+  .hero .container .image::before {
+    height: 160%;
+    width: 115%;
+    background-position: -983% 0%;
+    background-size: 102%;
+    top: -40%;
+    left: 3%;
+  }
+}
+
 @media (min-width: 62rem) {
   .hero .container .image::before {
     height: 312%;
@@ -526,6 +537,18 @@ nav .container .ham-icon {
     top: -47%;
     left: 0;
     background-size: 140%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .hero .container .image::after {
+    background-image: url("../images/bg-intro-desktop.svg");
+    height: 175%;
+    width: 116%;
+    background-position: -8% 46%;
+    background-size: 141% 116%;
+    top: -52%;
+    left: 0;
   }
 }
 
