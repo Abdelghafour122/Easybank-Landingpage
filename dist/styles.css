@@ -492,17 +492,6 @@ nav .container .ham-icon {
   }
 }
 
-@media (min-width: 48rem) {
-  .hero .container .image::before {
-    height: 160%;
-    width: 115%;
-    background-position: -983% 0%;
-    background-size: 102%;
-    top: -40%;
-    left: 3%;
-  }
-}
-
 @media (min-width: 62rem) {
   .hero .container .image::before {
     height: 312%;
