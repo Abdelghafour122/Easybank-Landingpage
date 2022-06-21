@@ -1,0 +1,28 @@
+.second {
+  & .container {
+    & .text {
+      justify-content: flex-start;
+      & .h1 {
+        color: $dark-blue;
+      }
+      & p {
+        color: $grayish-blue;
+      }
+    }
+    & .info {
+      display: grid;
+      grid-template-columns: repeat(4, 300px);
+      & article {
+        justify-content: center;
+        & img {
+        }
+        & h4 {
+          color: $dark-blue;
+        }
+        & p {
+          color: $grayish-blue;
+        }
+      }
+    }
+  }
+}
