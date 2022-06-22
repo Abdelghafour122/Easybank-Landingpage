@@ -12,7 +12,6 @@ html {
 body {
   margin: 0;
   font-family: Public Sans;
-  height: 2000px;
 }
 
 ul {
@@ -526,4 +525,61 @@ nav .container .ham-icon {
 }
 .third .container .articles .text p {
   color: hsl(233deg, 8%, 62%);
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+}
+footer .container {
+  flex-direction: column;
+}
+@media (min-width: 36rem) {
+  footer .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+footer .container .left .socials {
+  gap: 30px;
+}
+footer .container .left .socials ul {
+  gap: 10px;
+}
+footer .container .left .socials ul li {
+  cursor: pointer;
+}
+footer .container .left .socials ul li svg path {
+  transition: 0.2s;
+}
+footer .container .left .socials ul li svg:hover path {
+  fill: hsl(136deg, 65%, 51%);
+}
+footer .container .left .links {
+  gap: 10px;
+}
+footer .container .left .links a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  transition: 0.2s;
+}
+footer .container .left .links a:hover {
+  color: hsl(136deg, 65%, 51%);
+}
+footer .container .credits p {
+  color: hsl(233deg, 8%, 62%);
+}
+
+.attribution {
+  background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 17px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+.attribution a {
+  -webkit-text-decoration: underline dotted 2px;
+          text-decoration: underline dotted 2px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */

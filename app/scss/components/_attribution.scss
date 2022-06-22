@@ -1,0 +1,12 @@
+.attribution {
+  background-image: linear-gradient(to right, $lime-green, $bright-cyan);
+  color: $white;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  & a {
+    text-decoration: underline dotted 2px;
+    text-transform: uppercase;
+  }
+}

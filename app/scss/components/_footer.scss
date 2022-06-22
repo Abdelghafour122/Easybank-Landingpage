@@ -1,0 +1,50 @@
+footer {
+  background-color: $dark-blue;
+
+  & .container {
+    flex-direction: column;
+    @include breakpoint-up(small) {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 40px;
+    }
+    & .left {
+      & .socials {
+        gap: 30px;
+        & img {
+        }
+        & ul {
+          gap: 10px;
+          & li {
+            cursor: pointer;
+            & svg {
+              & path {
+                transition: 0.2s;
+              }
+              &:hover path {
+                fill: $lime-green;
+              }
+            }
+          }
+        }
+      }
+      & .links {
+        // flex-direction: column;
+        gap: 10px;
+        & a {
+          color: $white;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            color: $lime-green;
+          }
+        }
+      }
+    }
+    & .credits {
+      & p {
+        color: $grayish-blue;
+      }
+    }
+  }
+}
