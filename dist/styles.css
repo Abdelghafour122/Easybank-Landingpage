@@ -445,20 +445,48 @@ nav .container .ham-icon {
 }
 
 .second .container .text {
-  justify-content: flex-start;
+  align-items: center;
 }
-.second .container .text .h1 {
+@media (min-width: 36rem) {
+  .second .container .text {
+    align-items: flex-start;
+  }
+}
+.second .container .text h2 {
   color: hsl(233deg, 26%, 24%);
+  text-align: center;
+}
+@media (min-width: 36rem) {
+  .second .container .text h2 {
+    text-align: unset;
+  }
 }
 .second .container .text p {
   color: hsl(233deg, 8%, 62%);
+  text-align: center;
+}
+@media (min-width: 36rem) {
+  .second .container .text p {
+    text-align: unset;
+  }
 }
 .second .container .info {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
+@media (min-width: 36rem) {
+  .second .container .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 62rem) {
+  .second .container .info {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .second .container .info article {
   justify-content: center;
+  text-align: center;
 }
 .second .container .info article h4 {
   color: hsl(233deg, 26%, 24%);

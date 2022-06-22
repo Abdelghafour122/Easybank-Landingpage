@@ -1,19 +1,37 @@
 .second {
   & .container {
     & .text {
-      justify-content: flex-start;
-      & .h1 {
+      align-items: center;
+      @include breakpoint-up(small) {
+        align-items: flex-start;
+      }
+      & h2 {
         color: $dark-blue;
+        text-align: center;
+        @include breakpoint-up(small) {
+          text-align: unset;
+        }
       }
       & p {
         color: $grayish-blue;
+        text-align: center;
+        @include breakpoint-up(small) {
+          text-align: unset;
+        }
       }
     }
     & .info {
       display: grid;
-      grid-template-columns: repeat(4, 300px);
+      grid-template-columns: repeat(auto-fill, 1fr);
+      @include breakpoint-up(small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
+      }
       & article {
         justify-content: center;
+        text-align: center;
         & img {
         }
         & h4 {
