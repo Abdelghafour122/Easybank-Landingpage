@@ -1,0 +1,31 @@
+.third {
+  & .container {
+    & h2 {
+      color: $dark-blue;
+    }
+    & .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 1fr);
+      @include breakpoint-up(small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      & img {
+        width: 100%;
+      }
+      & .text {
+        & h6 {
+          color: $grayish-blue;
+        }
+        & h4 {
+          color: $dark-blue;
+        }
+        & p {
+          color: $grayish-blue;
+        }
+      }
+    }
+  }
+}

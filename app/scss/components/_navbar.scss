@@ -2,6 +2,7 @@ nav {
   padding: 24px 0;
   background-color: $very-light-gray;
   position: relative;
+  z-index: 99;
   @include breakpoint-up(large) {
   }
   & .container {
