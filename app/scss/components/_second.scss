@@ -1,14 +1,22 @@
 .second {
-  background-color: $very-light-gray;
+  background-color: $light-grayish-blue;
+  padding: 50px 0;
+  @include breakpoint-up(medium) {
+    padding: 70px 0;
+  }
   & .container {
     & .text {
       align-items: center;
+      margin-bottom: 40px;
       @include breakpoint-up(small) {
         align-items: flex-start;
       }
       & h2 {
         color: $dark-blue;
         text-align: center;
+        font-weight: 300;
+        font-size: 30px;
+        margin: 0;
         @include breakpoint-up(small) {
           text-align: unset;
         }
@@ -16,14 +24,23 @@
       & p {
         color: $grayish-blue;
         text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
         @include breakpoint-up(small) {
           text-align: unset;
+        }
+        @include breakpoint-up(medium) {
+          width: 60%;
+        }
+        @include breakpoint-up(large) {
+          width: 50%;
         }
       }
     }
     & .info {
       display: grid;
       grid-template-columns: repeat(auto-fill, 1fr);
+      gap: 30px;
       @include breakpoint-up(small) {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -33,13 +50,25 @@
       & article {
         justify-content: center;
         text-align: center;
-        & img {
+        gap: 30px;
+        @include breakpoint-up(medium) {
+          align-items: flex-start;
         }
         & h4 {
           color: $dark-blue;
+          margin: 0;
+          font-weight: 300;
+          font-size: 22px;
         }
         & p {
           color: $grayish-blue;
+          text-align: center;
+          line-height: 1.5;
+          font-size: 15px;
+          margin: 0;
+          @include breakpoint-up(medium) {
+            text-align: left;
+          }
         }
       }
     }

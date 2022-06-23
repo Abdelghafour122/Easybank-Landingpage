@@ -44,6 +44,9 @@ ul {
 .df.ai-fs {
   align-items: flex-start;
 }
+.df.ai-fe {
+  align-items: flex-end;
+}
 .df.fd-c {
   flex-direction: column;
 }
@@ -310,7 +313,7 @@ nav .container .ham-icon {
 }
 .hero .container .text {
   text-align: center;
-  margin: 40px 0 60px;
+  margin: 50px 0 75px;
 }
 @media (min-width: 36rem) {
   .hero .container .text {
@@ -444,10 +447,17 @@ nav .container .ham-icon {
 }
 
 .second {
-  background-color: hsl(0deg, 0%, 98%);
+  background-color: hsl(220deg, 16%, 96%);
+  padding: 50px 0;
+}
+@media (min-width: 48rem) {
+  .second {
+    padding: 70px 0;
+  }
 }
 .second .container .text {
   align-items: center;
+  margin-bottom: 40px;
 }
 @media (min-width: 36rem) {
   .second .container .text {
@@ -457,6 +467,9 @@ nav .container .ham-icon {
 .second .container .text h2 {
   color: hsl(233deg, 26%, 24%);
   text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  margin: 0;
 }
 @media (min-width: 36rem) {
   .second .container .text h2 {
@@ -466,15 +479,28 @@ nav .container .ham-icon {
 .second .container .text p {
   color: hsl(233deg, 8%, 62%);
   text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
 }
 @media (min-width: 36rem) {
   .second .container .text p {
     text-align: unset;
   }
 }
+@media (min-width: 48rem) {
+  .second .container .text p {
+    width: 60%;
+  }
+}
+@media (min-width: 62rem) {
+  .second .container .text p {
+    width: 50%;
+  }
+}
 .second .container .info {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 30px;
 }
 @media (min-width: 36rem) {
   .second .container .info {
@@ -489,12 +515,30 @@ nav .container .ham-icon {
 .second .container .info article {
   justify-content: center;
   text-align: center;
+  gap: 30px;
+}
+@media (min-width: 48rem) {
+  .second .container .info article {
+    align-items: flex-start;
+  }
 }
 .second .container .info article h4 {
   color: hsl(233deg, 26%, 24%);
+  margin: 0;
+  font-weight: 300;
+  font-size: 22px;
 }
 .second .container .info article p {
   color: hsl(233deg, 8%, 62%);
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0;
+}
+@media (min-width: 48rem) {
+  .second .container .info article p {
+    text-align: left;
+  }
 }
 
 .third .container h2 {

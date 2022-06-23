@@ -6,7 +6,7 @@
     }
     .text {
       text-align: center;
-      margin: 40px 0 60px;
+      margin: 50px 0 75px;
       @include breakpoint-up(small) {
         flex-basis: 40%;
         order: unset;
