@@ -2,9 +2,14 @@
   background-image: linear-gradient(to right, $lime-green, $bright-cyan);
   color: $white;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
   padding: 10px 0;
   letter-spacing: 2px;
+  flex-direction: column;
+  text-align: center;
+  @include breakpoint-up(small) {
+    font-size: 17px;
+  }
   & a {
     text-decoration: underline dotted 2px;
     text-transform: uppercase;

@@ -611,9 +611,16 @@ nav .container .ham-icon {
 
 footer {
   background-color: hsl(233deg, 26%, 24%);
+  padding: 30px 0;
+}
+@media (min-width: 36rem) {
+  footer {
+    padding: 50px 0;
+  }
 }
 footer .container {
   flex-direction: column;
+  gap: 30px;
 }
 @media (min-width: 36rem) {
   footer .container {
@@ -622,11 +629,26 @@ footer .container {
     gap: 40px;
   }
 }
+footer .container .left {
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 36rem) {
+  footer .container .left {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container .left {
+    gap: 80px;
+  }
+}
 footer .container .left .socials {
   gap: 30px;
 }
 footer .container .left .socials ul {
-  gap: 10px;
+  gap: 17px;
 }
 footer .container .left .socials ul li {
   cursor: pointer;
@@ -638,7 +660,36 @@ footer .container .left .socials ul li svg:hover path {
   fill: hsl(136deg, 65%, 51%);
 }
 footer .container .left .links {
+  flex-direction: column;
   gap: 10px;
+}
+@media (min-width: 36rem) {
+  footer .container .left .links {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container .left .links {
+    gap: 80px;
+  }
+}
+footer .container .left .links .left-links,
+footer .container .left .links .right-links {
+  gap: 10px;
+}
+@media (min-width: 36rem) {
+  footer .container .left .links .left-links,
+footer .container .left .links .right-links {
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container .left .links .left-links,
+footer .container .left .links .right-links {
+    gap: 20px;
+  }
 }
 footer .container .left .links a {
   color: hsl(0deg, 0%, 100%);
@@ -648,17 +699,35 @@ footer .container .left .links a {
 footer .container .left .links a:hover {
   color: hsl(136deg, 65%, 51%);
 }
+footer .container .credits {
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 36rem) {
+  footer .container .credits {
+    align-items: flex-end;
+  }
+}
 footer .container .credits p {
   color: hsl(233deg, 8%, 62%);
+  margin: 0;
+  font-size: 15px;
 }
 
 .attribution {
   background-image: linear-gradient(to right, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
   padding: 10px 0;
   letter-spacing: 2px;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 36rem) {
+  .attribution {
+    font-size: 17px;
+  }
 }
 .attribution a {
   -webkit-text-decoration: underline dotted 2px;
