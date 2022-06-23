@@ -1,8 +1,8 @@
 .second {
   background-color: $light-grayish-blue;
-  padding: 50px 0;
+  padding: 95px 0;
   @include breakpoint-up(medium) {
-    padding: 70px 0;
+    padding: 85px 0;
   }
   & .container {
     & .text {
@@ -34,6 +34,7 @@
         }
         @include breakpoint-up(large) {
           width: 50%;
+          margin: 25px 0;
         }
       }
     }

@@ -10,16 +10,21 @@ footer {
     @include breakpoint-up(small) {
       flex-direction: row;
       justify-content: flex-start;
+    }
+    @include breakpoint-up(medium) {
       gap: 40px;
     }
     & .left {
       flex-direction: column;
       @include breakpoint-up(small) {
         flex-direction: row;
-        gap: 50px;
+        gap: 40px;
       }
       @include breakpoint-up(medium) {
         gap: 80px;
+      }
+      @include breakpoint-up(large) {
+        gap: 130px;
       }
       gap: 30px;
       & .socials {
@@ -44,10 +49,13 @@ footer {
         gap: 10px;
         @include breakpoint-up(small) {
           flex-direction: row;
-          gap: 50px;
+          gap: 40px;
         }
         @include breakpoint-up(medium) {
           gap: 80px;
+        }
+        @include breakpoint-up(large) {
+          gap: 120px;
         }
         & .left-links,
         .right-links {

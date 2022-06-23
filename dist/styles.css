@@ -468,11 +468,11 @@ nav .container .ham-icon {
 
 .second {
   background-color: hsl(220deg, 16%, 96%);
-  padding: 50px 0;
+  padding: 95px 0;
 }
 @media (min-width: 48rem) {
   .second {
-    padding: 70px 0;
+    padding: 85px 0;
   }
 }
 .second .container .text {
@@ -515,6 +515,7 @@ nav .container .ham-icon {
 @media (min-width: 62rem) {
   .second .container .text p {
     width: 50%;
+    margin: 25px 0;
   }
 }
 .second .container .info {
@@ -646,6 +647,10 @@ footer .container {
   footer .container {
     flex-direction: row;
     justify-content: flex-start;
+  }
+}
+@media (min-width: 48rem) {
+  footer .container {
     gap: 40px;
   }
 }
@@ -656,12 +661,17 @@ footer .container .left {
 @media (min-width: 36rem) {
   footer .container .left {
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
   }
 }
 @media (min-width: 48rem) {
   footer .container .left {
     gap: 80px;
+  }
+}
+@media (min-width: 62rem) {
+  footer .container .left {
+    gap: 130px;
   }
 }
 footer .container .left .socials {
@@ -686,12 +696,17 @@ footer .container .left .links {
 @media (min-width: 36rem) {
   footer .container .left .links {
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
   }
 }
 @media (min-width: 48rem) {
   footer .container .left .links {
     gap: 80px;
+  }
+}
+@media (min-width: 62rem) {
+  footer .container .left .links {
+    gap: 120px;
   }
 }
 footer .container .left .links .left-links,
@@ -753,4 +768,5 @@ footer .container .credits p {
   -webkit-text-decoration: underline dotted 2px;
           text-decoration: underline dotted 2px;
   text-transform: uppercase;
+  color: hsl(233deg, 26%, 24%);
 }/*# sourceMappingURL=styles.css.map */
