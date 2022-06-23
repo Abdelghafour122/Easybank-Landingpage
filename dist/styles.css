@@ -468,7 +468,7 @@ nav .container .ham-icon {
   color: hsl(233deg, 26%, 24%);
   text-align: center;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
 }
 @media (min-width: 36rem) {
@@ -541,12 +541,31 @@ nav .container .ham-icon {
   }
 }
 
+.third {
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 50px 0;
+}
+@media (min-width: 48rem) {
+  .third {
+    padding: 70px 0;
+  }
+}
 .third .container h2 {
   color: hsl(233deg, 26%, 24%);
+  font-weight: 300;
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 35px;
+}
+@media (min-width: 36rem) {
+  .third .container h2 {
+    text-align: unset;
+  }
 }
 .third .container .articles {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 30px;
 }
 @media (min-width: 36rem) {
   .third .container .articles {
@@ -558,17 +577,36 @@ nav .container .ham-icon {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.third .container .articles img {
+.third .container .articles article {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.third .container .articles article img {
   width: 100%;
+  height: 50%;
 }
-.third .container .articles .text h6 {
+.third .container .articles article .text {
+  gap: 20px;
+  padding: 22px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.third .container .articles article .text h6 {
+  margin: 0;
   color: hsl(233deg, 8%, 62%);
+  font-weight: 400;
+  font-size: 12px;
 }
-.third .container .articles .text h4 {
+.third .container .articles article .text h4 {
+  margin: 0;
   color: hsl(233deg, 26%, 24%);
+  font-size: 21px;
+  font-weight: 300;
 }
-.third .container .articles .text p {
+.third .container .articles article .text p {
+  margin: 0;
   color: hsl(233deg, 8%, 62%);
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 footer {
