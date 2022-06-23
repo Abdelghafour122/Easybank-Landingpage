@@ -67,20 +67,28 @@
           left: 3%;
         }
         @include breakpoint-up(medium) {
-          //   height: 160%;
-          //   width: 115%;
-          //   background-position: -983% 0%;
-          //   background-size: 102%;
-          //   top: -40%;
-          //   left: 3%;
+          height: 226%;
+          width: 115%;
+          background-position: 196% 0%;
+          background-size: 85%;
+          top: -31%;
+          left: 0%;
         }
         @include breakpoint-up(large) {
           height: 312%;
+          width: 100%;
+          background-position: -792% -22%;
+          background-size: 102%;
+          top: -65%;
+          left: 13%;
+        }
+        @include breakpoint-up(xlarge) {
+          height: 328%;
           width: 110%;
           background-position: 323% -51%;
           background-size: 93%;
-          top: -45%;
-          left: 2%;
+          top: -58%;
+          left: 3%;
         }
       }
       &::after {
